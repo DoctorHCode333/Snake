@@ -1,0 +1,60 @@
+.body{
+    text-align: center;
+}
+
+#head{
+    text-align: center;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(10,1fr); 
+    grid-template-rows: repeat(10,1fr); 
+    width: 500px;
+    border: 10px solid rgb(255, 0, 0);
+    padding: 0px;
+  }
+
+  .lightGreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(28, 238, 0);
+    height: 48px;
+    width: 48px;
+    border: 1px solid rgb(0, 0, 0);
+   
+  }
+  .darkGreen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 151, 0);
+    height: 48px;
+    width: 48px;
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  .snakeHead{
+    background-color: rgb(216, 5, 5);
+    height: 48px;
+    width: 48px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+  }
+
+  .snakeBody{
+    background-color: rgb(182, 0, 206);
+    height: 48px;
+    width: 48px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 30%;
+  }
+  
+  .food{
+    background-color: rgb(200, 255, 0);
+    height: 38px;
+    width: 38px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 80%;
+  }

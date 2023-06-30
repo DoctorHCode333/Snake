@@ -1,20 +1,37 @@
 .body{
     text-align: center;
 }
-
+.game{
+  position: relative;
+}
 #head{
     text-align: center;
 }
 
-#board{
+#grid{
     display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
     grid-template-columns: repeat(10,1fr); 
     grid-template-rows: repeat(10,1fr); 
     width: 500px;
     border: 10px solid rgb(255, 0, 0);
     padding: 0px;
+    z-index: -1;
   }
-
+  
+#board{
+  display: grid;
+  grid-template-columns: repeat(10,1fr); 
+  grid-template-rows: repeat(10,1fr); 
+  width: 500px;
+  height: 500px;
+  border: 10px solid rgb(255, 0, 0);
+  padding: 0px;
+}
   .lightGreen{
     display: flex;
     justify-content: center;
@@ -36,6 +53,7 @@
   }
 
   .snakeHead{
+
     background-color: rgb(216, 5, 5);
     height: 48px;
     width: 48px;

@@ -1,78 +1,176 @@
-.body{
-    text-align: center;
-}
-.game{
-  position: relative;
-}
-#head{
-    text-align: center;
+.body {
+  text-align: center;
 }
 
-#grid{
-    display: grid;
+.game {
+  position: relative;
+}
+
+#inst1 {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media (max-width: 1200px) {
+  .game #inst1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   
-    grid-template-columns: repeat(10,1fr); 
-    grid-template-rows: repeat(10,1fr); 
-    width: 500px;
-    border: 10px solid rgb(255, 0, 0);
-    padding: 0px;
-    z-index: -1;
+    left: 8%;
+    top: 30%;
   }
-  
-#board{
+
+  .game #grid {
+    width: 250px;
+    height: 250px;
+    padding: 0.5px;
+    border: 5px solid rgb(255, 0, 0);
+  }
+
+  .game #board {
+    width: 250px;
+    height: 250px;
+    padding: 0.5px;
+    border: 5px solid rgb(255, 0, 0);
+  }
+
+  .game .lightGreen {
+    height: 24px;
+    width: 24px;
+  }
+
+  .game .darkGreen {
+    height: 24px;
+    width: 24px;
+  }
+
+  .game .snakeHead {
+    height: 24px;
+    width: 24px;
+  }
+
+  .game .snakeBody {
+    height: 24px;
+    width: 24px;
+  }
+
+  .game .food {
+    height: 19px;
+    width: 19px;
+  }
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media (max-width: 900px) {
+  .game #inst1 {
+    position: static;
+    display: block;
+    margin: 40px 0px;
+  }
+
+  .game #grid {
+    top: 66.59%;
+    transform: translate(-50%, -50%);
+  }
+
+  .head #scoreBox {
+    margin: 40px 0px 20px;
+  }
+
+  .head #hiScoreBox {
+    margin: 10px 0px;
+  }
+
+  .footer>div {
+    margin-top: 50px;
+  }
+
+}
+
+#head {
+  text-align: center;
+}
+
+#scoreBox {
+  text-align: center;
+}
+
+#hiScoreBox {
+  text-align: center;
+}
+
+#grid {
   display: grid;
-  grid-template-columns: repeat(10,1fr); 
-  grid-template-rows: repeat(10,1fr); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   width: 500px;
   height: 500px;
   border: 10px solid rgb(255, 0, 0);
-  padding: 0px;
+  padding: 1px;
+  z-index: -1;
 }
-  .lightGreen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(28, 238, 0);
-    height: 48px;
-    width: 48px;
-    border: 1px solid rgb(0, 0, 0);
-   
-  }
-  .darkGreen{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(43, 151, 0);
-    height: 48px;
-    width: 48px;
-    border: 1px solid rgb(0, 0, 0);
-  }
 
-  .snakeHead{
+#board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 500px;
+  height: 500px;
+  border: 10px solid rgb(255, 0, 0);
+  padding: 1px;
+}
 
-    background-color: rgb(216, 5, 5);
-    height: 48px;
-    width: 48px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 50%;
-  }
+.lightGreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 238, 0);
+  height: 48px;
+  width: 48px;
+  border: 1px solid rgb(0, 0, 0);
 
-  .snakeBody{
-    background-color: rgb(182, 0, 206);
-    height: 48px;
-    width: 48px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 30%;
-  }
-  
-  .food{
-    background-color: rgb(200, 255, 0);
-    height: 38px;
-    width: 38px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 80%;
-  }
+}
+
+.darkGreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 151, 0);
+  height: 48px;
+  width: 48px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.snakeHead {
+
+  background-color: rgb(216, 5, 5);
+  height: 48px;
+  width: 48px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.snakeBody {
+  background-color: rgb(182, 0, 206);
+  height: 48px;
+  width: 48px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 30%;
+}
+
+.food {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(200, 255, 0);
+  height: 38px;
+  width: 38px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 80%;
+}

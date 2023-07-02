@@ -1,144 +1,167 @@
 <html lang="en" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
-    <section class="head">
+    <section class="head py-2">
         <div id="head" class="container">
-            <h1>Snake-Maina</h1>
+            <h2>Snake-Maina</h1>
+        </div>
+
+        <div id="scoreBox">
+            <h5>Score: 0</h5>
+        </div>
+
+        <div id="hiScoreBox">
+            <h5>Hi-Score: 0</h5>
         </div>
     </section>
 
     <section class="game">
+        <div id="inst1" class="text-center">
+            <h5>
+                <pre>
+W-UP
+A-RIGTH      D-LEFT
+S-DOWN
+                </pre>
+            </h5>
+        </div>
         <div id="grid" class="container">
 
-            <div id="00" class="lightGreen"></div>
-            <div id="01" class="darkGreen"></div>
-            <div id="02" class="lightGreen"></div>
-            <div id="03" class="darkGreen"></div>
-            <div id="04" class="lightGreen"></div>
-            <div id="05" class="darkGreen"></div>
-            <div id="06" class="lightGreen"></div>
-            <div id="07" class="darkGreen"></div>
-            <div id="08" class="lightGreen"></div>
-            <div id="09" class="darkGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
 
-            <div id="10" class="darkGreen"></div>
-            <div id="11" class="lightGreen"></div>
-            <div id="12" class="darkGreen"></div>
-            <div id="13" class="lightGreen"></div>
-            <div id="14" class="darkGreen"></div>
-            <div id="15" class="lightGreen"></div>
-            <div id="16" class="darkGreen"></div>
-            <div id="17" class="lightGreen"></div>
-            <div id="18" class="darkGreen"></div>
-            <div id="19" class="lightGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
 
-            <div id="20" class="lightGreen"></div>
-            <div id="21" class="darkGreen"></div>
-            <div id="22" class="lightGreen"></div>
-            <div id="23" class="darkGreen"></div>
-            <div id="24" class="lightGreen"></div>
-            <div id="25" class="darkGreen"></div>
-            <div id="26" class="lightGreen"></div>
-            <div id="27" class="darkGreen"></div>
-            <div id="28" class="lightGreen"></div>
-            <div id="29" class="darkGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
 
-            <div id="30" class="darkGreen"></div>
-            <div id="31" class="lightGreen"></div>
-            <div id="32" class="darkGreen"></div>
-            <div id="33" class="lightGreen"></div>
-            <div id="34" class="darkGreen"></div>
-            <div id="35" class="lightGreen"></div>
-            <div id="36" class="darkGreen"></div>
-            <div id="37" class="lightGreen"></div>
-            <div id="38" class="darkGreen"></div>
-            <div id="39" class="lightGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
 
-            <div id="40" class="lightGreen"></div>
-            <div id="41" class="darkGreen"></div>
-            <div id="42" class="lightGreen"></div>
-            <div id="43" class="darkGreen"></div>
-            <div id="44" class="lightGreen"></div>
-            <div id="45" class="darkGreen"></div>
-            <div id="46" class="lightGreen"></div>
-            <div id="47" class="darkGreen"></div>
-            <div id="48" class="lightGreen"></div>
-            <div id="49" class="darkGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
 
-            <div id="50" class="darkGreen"></div>
-            <div id="51" class="lightGreen"></div>
-            <div id="52" class="darkGreen"></div>
-            <div id="53" class="lightGreen"></div>
-            <div id="54" class="darkGreen"></div>
-            <div id="55" class="lightGreen"></div>
-            <div id="56" class="darkGreen"></div>
-            <div id="57" class="lightGreen"></div>
-            <div id="58" class="darkGreen"></div>
-            <div id="59" class="lightGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
 
-            <div id="60" class="lightGreen"></div>
-            <div id="61" class="darkGreen"></div>
-            <div id="62" class="lightGreen"></div>
-            <div id="63" class="darkGreen"></div>
-            <div id="64" class="lightGreen"></div>
-            <div id="65" class="darkGreen"></div>
-            <div id="66" class="lightGreen"></div>
-            <div id="67" class="darkGreen"></div>
-            <div id="68" class="lightGreen"></div>
-            <div id="69" class="darkGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
 
-            <div id="70" class="darkGreen"></div>
-            <div id="71" class="lightGreen"></div>
-            <div id="72" class="darkGreen"></div>
-            <div id="73" class="lightGreen"></div>
-            <div id="74" class="darkGreen"></div>
-            <div id="75" class="lightGreen"></div>
-            <div id="76" class="darkGreen"></div>
-            <div id="77" class="lightGreen"></div>
-            <div id="78" class="darkGreen"></div>
-            <div id="79" class="lightGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
 
-            <div id="80" class="lightGreen"></div>
-            <div id="81" class="darkGreen"></div>
-            <div id="82" class="lightGreen"></div>
-            <div id="83" class="darkGreen"></div>
-            <div id="84" class="lightGreen"></div>
-            <div id="85" class="darkGreen"></div>
-            <div id="86" class="lightGreen"></div>
-            <div id="87" class="darkGreen"></div>
-            <div id="88" class="lightGreen"></div>
-            <div id="89" class="darkGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
 
-            <div id="90" class="darkGreen"></div>
-            <div id="91" class="lightGreen"></div>
-            <div id="92" class="darkGreen"></div>
-            <div id="93" class="lightGreen"></div>
-            <div id="94" class="darkGreen"></div>
-            <div id="95" class="lightGreen"></div>
-            <div id="96" class="darkGreen"></div>
-            <div id="97" class="lightGreen"></div>
-            <div id="98" class="darkGreen"></div>
-            <div id="99" class="lightGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+            <div class="lightGreen"></div>
+            <div class="darkGreen"></div>
+
+
+
+
         </div>
         <div id="board" class="container"> </div>
     </section>
 
-    <section class="footer">
+    <section class="footer py-3">
+        <div class="container text-center">© DoctorHHCode</div>
 
     </section>
-
-
-
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

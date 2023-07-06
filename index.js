@@ -159,19 +159,19 @@ function handleTouchMove(evt) {
                                                                          
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
-            inputDir.x = 1;
+            inputDir.x = -1;
             inputDir.y = 0;
         } else {
-            inputDir.x = -1;
+            inputDir.x = 1;
             inputDir.y = 0;
         }                       
     } else {
         if ( yDiff > 0 ) {
             inputDir.x = 0;
-            inputDir.y = 1; 
+            inputDir.y = -1;
         } else { 
             inputDir.x = 0;
-            inputDir.y = -1;
+            inputDir.y = 1; 
         }                                                                 
     }
     /* reset values */

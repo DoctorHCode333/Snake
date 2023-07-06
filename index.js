@@ -173,7 +173,8 @@ function handleTouchMove(evt) {
         } else { 
             inputDir.x = 0;
             inputDir.y = 1; 
-        }                                                                 
+        }
+        event.preventDefault();
     }
     /* reset values */
     xDown = null;

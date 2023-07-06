@@ -9,7 +9,7 @@ let musicSound = new Audio('music/music.mp3');
 let snakeArr = [{ x: 2, y: 1 }];
 let board = document.getElementById('board');
 let food = { x: 4, y: 4 };
-let game = document.getElementsByClassName('game');
+let game = document.getElementById('game');
 
 
 function main(ctime) {

@@ -129,8 +129,8 @@ window.addEventListener("keypress", event => {
     }
 });
 
-document.addEventListener('touchstart', handleTouchStart, false);        
-document.addEventListener('touchmove', handleTouchMove, false);
+window.addEventListener('touchstart', handleTouchStart, false);        
+window.addEventListener('touchmove', handleTouchMove, false);
 
 var xDown = null;                                                        
 var yDown = null;

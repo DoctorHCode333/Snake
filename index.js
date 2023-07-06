@@ -148,6 +148,8 @@ function handleTouchStart(evt) {
 };                                                
                                                                          
 function handleTouchMove(evt) {
+    moveSound.play()
+    musicSound.play();
     if ( ! xDown || ! yDown ) {
         return;
     }

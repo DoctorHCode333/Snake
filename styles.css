@@ -4,6 +4,7 @@
 
 .game {
   position: relative;
+  margin-top: 30px;
 }
 
 #inst1 {
